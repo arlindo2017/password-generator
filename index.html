@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
+    <title>Random Generators</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
+  <body 
+    onload="generatePick6Tickets()" 
+  >
     <div class="wrapper">
       <header>
-        <h1>Password Generator</h1>
+        <h1>Random Generators</h1>
       </header>
+      <!-- Password Generator -->
       <div class="card">
         <div class="card-header">
-          <h2>Generate a Password</h2>
+          <h2>Password Generator</h2>
         </div>
         <div class="card-body">
           <textarea
@@ -23,12 +26,42 @@
             placeholder="Your Secure Password"
             aria-label="Generated Password"
           ></textarea>
+          <h5>User Criteria:</h5>
+          <div class="criteria">
+            <div>
+              <p>Password Length: <span id="length-prompt" class="prompts"></span></p>
+              <p>Lowercase: <span id="lower-case-prompt" class="prompts"></span></p>
+              <p>Uppercase: <span id="upper-case-prompt" class="prompts"></span></p>
+            </div>
+            <div>
+              <p>Numbers: <span id="numbers-prompt" class="prompts"></span></p>
+              <p>Special Characters: <span id="special-chars-prompt" class="prompts"></span></p>
+            </div>
+          </div>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+          <button id="generate-password" class="btn">Generate Password</button>
+        </div>
+        <br>
+        
+      
+      </div>
+      <br>
+      <!-- Pick 6 Generator -->
+      <div class="card">
+        <div class="card-header">
+          <h2>Other Random Generators</h2>
+        </div>
+        <div class="card-body">
+          <p>Pick 6 Lotto Numbers: <span id="pick6-lotto-numbers" ></span></p>
+        </div>
+        <div class="card-footer">
         </div>
       </div>
+      <br>
     </div>
-    <script src="./assets/js/script.js"></script>
+    
+    <script src="./assets/js/password-generator.js"></script>
+    <script src="./assets/js/other-generators.js"></script>
   </body>
 </html>
