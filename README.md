@@ -5,10 +5,10 @@ In this page you will find a random password generator that will prompt the user
 Additionaly you will also see different methods of creating random numbers using the Math.random() and Math.floor() methods.
 
 ### Webpage Link
-https://arlindo2017.github.io/password-generator/)
+https://arlindo2017.github.io/password-generator/
 
 ### GitHub Repo
-https://github.com/arlindo2017/password-generator)
+https://github.com/arlindo2017/password-generator
 
 ### Webpage Picture
 ![Password Generator.](./assets/img/password-generator.jpg)
