@@ -17,6 +17,11 @@ body {
   background-color: #f9fbfd;
 }
 
+span {
+  font-weight: 500;
+  color: red;
+}
+
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;

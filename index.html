@@ -7,9 +7,7 @@
     <title>Random Generators</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body 
-    onload="generatePick6Tickets()" 
-  >
+  <body>
     <div class="wrapper">
       <header>
         <h1>Random Generators</h1>
@@ -47,20 +45,40 @@
       
       </div>
       <br>
-      <!-- Pick 6 Generator -->
-      <div class="card">
+      <!-- Other Generators -->
+      <div class="card" id="other-generators">
         <div class="card-header">
-          <h2>Other Random Generators</h2>
+          <h2>Other Randomizers</h2>
         </div>
-        <div class="card-body">
-          <p>Pick 6 Lotto Numbers: <span id="pick6-lotto-numbers" ></span></p>
+        <div>
+          <h3>Math.Random()</h3>
+          <h4>Decimals</h4>
+          <ol>
+            <li>Generates a random decimal value between 0 and 1 : <span id="random-number1" ></span></li>
+            <li>Generates a random decimal value between 0 and 10 :<span id="random-number2" ></span></li>
+          </ol>
+          <h3>Math.floor(Math.Random())</h3>
+          <h4>Integers</h4>
+          <ol>
+            <li>Generates a integer value between 1 and 100 : <span id="random-number4" ></span></li>
+            <li>Generates a integer value between 0 and 10 : <span id="random-number3" ></span></li>
+          <p>Wins: <span id="win-counter" ></span></p>
+          </ol>
         </div>
         <div class="card-footer">
+        </div>
+        <div>
+          <h3>Multiple results using loops</h3>
+          <ol>
+          <li>Pick 6 Lotto Numbers: <span id="pick6-lotto-numbers" ></span></li>
+          </ol>
+        </div>
+        <div class="card-footer">
+          <p><input type="button" class="btn" value="Generate." onclick="generatePick6Tickets() ,generateRandomNumber()" /></p>
         </div>
       </div>
       <br>
     </div>
-    
     <script src="./assets/js/password-generator.js"></script>
     <script src="./assets/js/other-generators.js"></script>
   </body>
